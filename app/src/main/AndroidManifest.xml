@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android_opencv">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+    <uses-feature android:name="android.hardware.camera2.autofocus" />
+    <uses-feature android:name="android.hardware.camera2.front" />
+    <uses-feature android:name="android.hardware.camera2.front.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Android_opencv">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Image_segmentation" />
+        <activity android:name=".border_delection" />
+        <activity android:name=".morphologycal" />
+        <activity android:name=".Image_preprocessing" />
+        <activity android:name=".image_bilaterral" />
+        <activity android:name=".image_Median" />
+        <activity android:name=".image_Gau" />
+        <activity android:name=".image_Blur" />
+        <activity android:name=".image_histogramcu" />
+        <activity android:name=".image_histogramequa" />
+        <activity android:name=".image_remaping" />
+        <activity android:name=".img_hough" />
+        <activity android:name=".img_bounding" />
+        <activity android:name=".img_convex" />
+        <activity android:name=".img_finding" />
+        <activity android:name=".img_threshold" />
+        <activity android:name=".img_canny" />
+        <activity android:name=".img_sobel" />
+        <activity android:name=".img_laplacian" />
+        <activity android:name=".img_morphology" />
+        <activity android:name=".img_dialate" />
+        <activity android:name=".img_erode" />
+        <activity android:name=".image_Blur1" />
+        <activity android:name=".camera_histogramcu" />
+        <activity android:name=".camera_median" />
+        <activity android:name=".camera_gau" />
+        <activity android:name=".camera_remaping" />
+        <activity android:name=".camera_erode" />
+        <activity android:name=".camera_bilaterral" />
+        <activity android:name=".camera_histogramequa" />
+        <activity android:name=".camerahough"/>
+        <activity android:name=".camerabouding"/>
+        <activity android:name=".cameraconvex"/>
+        <activity android:name=".camerafinding" />
+        <activity android:name=".camerathreshold" />
+        <activity android:name=".camera_canny" />
+        <activity android:name=".camera_sobel" />
+        <activity android:name=".camera_laplacian" />
+        <activity android:name=".camera_morphology" />
+        <activity android:name=".camera_dilate" />
+    </application>
+
+</manifest>

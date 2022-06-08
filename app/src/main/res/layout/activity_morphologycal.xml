@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anhdong"
+    tools:context=".morphologycal">
+
+    <Button
+        android:id="@+id/btn_hinhM"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_toStartOf="@+id/btn_camera"
+        android:layout_toLeftOf="@+id/btn_camera"
+        android:background="@drawable/cutton_imga"
+        android:text="select image"
+        app:backgroundTint="@android:color/holo_blue_light" />
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/cutton_imga"
+        android:text="CAMERA"
+        app:backgroundTint="@android:color/holo_blue_light" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_erode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/cutton_imga"
+            android:text="Erode"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/btn_dilate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/cutton_imga"
+            android:text="Dilate"
+            app:backgroundTint="@color/white" />
+
+
+        <Button
+            android:id="@+id/btn_morphology"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/cutton_imga"
+            android:text="Ex.morphology operation"
+            app:backgroundTint="@color/white" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="150dp"
+        />
+    <org.opencv.android.JavaCameraView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:visibility="invisible"
+        android:id="@+id/cameraView"
+        android:layout_marginTop="160dp"/>
+
+</RelativeLayout>

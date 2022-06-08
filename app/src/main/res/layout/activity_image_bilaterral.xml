@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/lalasi"
+    android:layout_height="match_parent"
+    tools:context=".image_bilaterral">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/imgbilaterral"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/imgbilaterral2"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:id="@+id/Seebarbila"
+        android:max="100"
+        android:progress="3"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

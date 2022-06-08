@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anhdong"
+    tools:context=".Image_segmentation">
+
+    <Button
+        android:id="@+id/btn_hinhS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+
+
+        android:layout_toStartOf="@+id/btn_camera"
+        android:layout_toLeftOf="@+id/btn_camera"
+        android:background="@drawable/cutton_imga"
+        android:text="select image"
+        app:backgroundTint="@android:color/holo_blue_light"
+        app:iconTint="@android:color/holo_blue_bright" />
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/cutton_imga"
+        android:text="CAMERA"
+        app:backgroundTint="@android:color/holo_blue_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_threshold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/cutton_imga"
+            android:text="Threshold"
+            app:backgroundTint="?attr/colorOnError" />
+
+        <Button
+            android:id="@+id/btn_finding"
+            android:layout_width="136dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/cutton_imga"
+            android:text="Finding contours"
+            app:backgroundTint="@color/white" />
+
+
+        <Button
+            android:id="@+id/btn_convex"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/cutton_imga"
+            android:text="Convex Hull"
+            app:backgroundTint="@color/white" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_bounding"
+            android:layout_width="206dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/cutton_imga"
+            android:text="Bouding boxes and circles"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/btn_hough"
+            android:layout_width="133dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/cutton_imga"
+            android:text="Hogh Transform"
+            app:backgroundTint="@color/white" />
+
+
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="200dp"
+        />
+    <org.opencv.android.JavaCameraView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="210dp"
+        android:visibility="invisible"
+        android:id="@+id/cameraseg"/>
+
+</RelativeLayout>

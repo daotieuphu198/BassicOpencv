@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:background="@drawable/anhdong"
+    tools:context=".Image_preprocessing">
+
+    <Button
+        android:id="@+id/btn_hinhP"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_toStartOf="@+id/btn_camera"
+        android:layout_toLeftOf="@+id/btn_camera"
+        android:background="@drawable/cutton_imga"
+        android:text="select image"
+        app:backgroundTint="@android:color/holo_blue_dark" />
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/cutton_imga"
+        android:text="CAMERA"
+        app:backgroundTint="@android:color/holo_blue_dark" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_blur"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Blur"
+            android:background="@drawable/cutton_imga"
+
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/btn_gau"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/cutton_imga"
+            android:text="Gaussian"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/btn_median"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Median"
+            android:background="@drawable/cutton_imga"
+            app:backgroundTint="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_bilateral"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/cutton_imga"
+            android:text="Bilateral"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/btn_histogramcu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/cutton_imga"
+            android:text="Historam calculation"
+            app:backgroundTint="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="170dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_remapping"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Remapping"
+            android:background="@drawable/cutton_imga"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/btn_histogramequa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/cutton_imga"
+            android:text="Historam equalization"
+            app:backgroundTint="@color/white" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        />
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/mycamera"
+        android:layout_width="match_parent"
+        android:layout_height="501dp"
+        android:layout_marginTop="230dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
